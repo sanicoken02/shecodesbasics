@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coding workshops for women | SheCodes</title>
+    <style>
+      body {
+        text-align: center;
+      }
+
+      h1 {
+        color: #1a64d6;
+        font-size: 50px;
+        text-align: center;
+        line-height: 48px;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      h2 {
+        font-size: 40px;
+        margin: 0;
+        text-align: center;
+        line-height: 48px;
+        font-weight: 300;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      h3 {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      li {
+        list-style: none;
+        text-align: center;
+        padding: 10px 0;
+        border-radius: 10px;
+        max-width: 400px;
+        margin: 0 auto;
+        font-family: Arial, Helvetica, sans-serif;
+        transition: all 200ms ease-in-out;
+      }
+
+      li:hover {
+        background: rgba(225, 288, 196, 0.2);
+        cursor: pointer;
+      }
+
+      p {
+        font-size: 18px;
+        text-align: center;
+        font-family: monospace;
+      }
+
+      .end {
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode";
+      }
+
+      button {
+        padding: 15px 20px;
+        color: white;
+        display: block;
+        text-decoration: none;
+        font-size: 16px;
+        border-radius: 40px;
+        margin: 30px auto;
+        border: 1px solid #1a64d6;
+        background: #1a64d6;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 150ms ease-in-out;
+      }
+
+      button:hover {
+        background: white;
+        color: #1a64d6;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>🌥️<br />Currently 21° in Tokyo</h1>
+    <h2>13° / <strong>23°</strong></h2>
+    <ul>
+      <li>
+        <h3>🌧️ Tomorrow</h3>
+        <p>10° / <strong>22°</strong></p>
+      </li>
+      <li>
+        <h3>☁️ Saturday</h3>
+        <p>15° / <strong>17°</strong></p>
+      </li>
+      <li>
+        <h3>☀️ Sunday</h3>
+        <p>25° / <strong>28°</strong></p>
+      </li>
+    </ul>
+    <button type="button">Change city</button>
+    <p class="end">Coded by Ken Sanico</p>
+
+    <script>
+      function findTemp() {
+        let city = prompt("Which city are you from?");
+        let temp = prompt("What temperature is it?");
+        let heading = document.querySelector("h1");
+        if (temp >= 0) {
+          heading.innerHTML = "🌞 <br />Currently " + temp + "° in " + city;
+        } else {
+          heading.innerHTML = "😰 <br />Currently " + temp + "° in " + city;
+        }
+      }
+
+      let contactButton = document.querySelector("button");
+
+      contactButton.addEventListener("click", findTemp);
+    </script>
+  </body>
+</html>

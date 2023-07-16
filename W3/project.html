@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Global Developmental Delay (GDD) | Ken Sanico</title>
+    <style>
+      body {
+        background: linear-gradient(
+          111.5deg,
+          rgb(228, 247, 255) 21.9%,
+          rgb(255, 216, 194) 92.2%
+        );
+      }
+
+      h1 {
+        text-align: center;
+        font-weight: bolder;
+        font-family: "Galano Grotesque DEMO", ui-rounded;
+        padding: 0;
+      }
+
+      h2 {
+        font-weight: bold;
+        font-family: "Galano Grotesque DEMO", ui-rounded;
+        font-size: 30px;
+        text-align: center;
+      }
+
+      div {
+        font-family: "Poppins";
+        line-height: 18px;
+        text-align: justify;
+      }
+
+      span {
+        font-family: "Poppins";
+        line-height: 18px;
+        text-align: center;
+        font-size: smaller;
+      }
+
+      p {
+        text-align: center;
+        font-family: "Poppins";
+        line-height: 18px;
+      }
+
+      .footing {
+        font-size: 10px;
+      }
+
+      .WhatGDD {
+        font-family: "Galano Grotesque DEMO", ui-rounded;
+        font-weight: bold;
+        text-align: left;
+        font-size: 20px;
+        text-align: center;
+      }
+
+      .symptoms {
+        text-align: justify;
+      }
+
+      .stigma {
+        text-align: center;
+      }
+
+      ul {
+        font-family: "Poppins";
+        line-height: 18px;
+      }
+
+      img {
+        border-radius: 20px;
+        display: block;
+        margin: 30px auto;
+        max-width: 80%;
+        height: auto;
+      }
+
+      button {
+        padding: 15px 20px;
+        color: white;
+        display: block;
+        text-decoration: none;
+        font-size: 16px;
+        border-radius: 40px;
+        margin: 30px auto;
+        border: 1px solid #1a64d6;
+        background: #1a64d6;
+        box-shadow: white;
+        transition: all 150ms ease-in-out;
+        color: #f6e3d7;
+        font-family: "Poppins";
+      }
+
+      button:hover {
+        background: #f6e3d7;
+        border: 1 px solid #f6e3d7;
+        color: black;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Global Developmental Delay (GDD)</h1>
+    <img
+      src="https://pbs.twimg.com/profile_banners/1611351371890200576/1673071418/1500x500"
+    />
+    <h2>Understanding GDD</h2>
+    <p class="WhatGDD">What is GDD?</p>
+    <div>
+      The <strong>Global Developmental Delay (GDD) </strong> belongs to
+      neurodevelopmental diagnosis where individuals, usually in infants at
+      birth until early childhood years, take longer or are unable to meet or
+      perform expected developmental milestones in several areas of intellectual
+      functioning, compared to developing peers. They typically present as
+      younger or behind.
+    </div>
+    <p class="areasOfGDD">
+      <strong>These areas include:</strong>
+    </p>
+    <ul>
+      <li>
+        Gross motor skills or locomotion (sitting up, rolling over, crawling,
+        walking)
+      </li>
+      <li>Vision and fine motor skills (hand-eye coordination)</li>
+      <li>
+        Communication (use of facial muscles, lips, tongue; hearing and
+        language)
+      </li>
+      <li>
+        Cognitive ability (understand and retain information; problem-solving
+        skills)
+      </li>
+      <li>
+        Personal/Social/Emotional skills (interpret social cues and social
+        awareness, respons appropriately to others, gain personal independence
+        and self-care skills, and interact and play with their same-aged peers)
+      </li>
+    </ul>
+    <hr />
+    <p><strong>What are the signs and symptoms of GDD?</strong></p>
+    <p class="symptoms">
+      A child must not be older than 5 years old, and manifests regression in
+      otherwise expected developmental milestones, particularly in intellectual
+      functioning. At least 2 delays must also be observed in developmental
+      domains, such as gross and fine motor, speech and language, personal and
+      social, and activities of daily living.
+    </p>
+    <p>GDD could also be with the diagnosis of...</p>
+    <span
+      ><em
+        >"You may not have heard about GDD but do these ring a bell?"</em
+      ></span
+    >
+    <ul>
+      <li>
+        <strong><em>Down syndrome</em></strong> if it affects the motor,
+        cognitive, linguistic and personal-social skills
+      </li>
+      <li>
+        <strong><em>Cerebral palsy</em></strong> if the child suffered from
+        brain damage during or right after birth
+      </li>
+      <li>
+        <strong><em>Autism Spectrum Disorder (ASD)</em></strong> if it
+        specifically affects difficulty in social and communication skills
+      </li>
+    </ul>
+    <br />
+    <hr />
+    <p class="stigma">
+      <a href="https://linktr.ee/amlig2023" target="_blank"
+        >Break the stigma by educating yourself about GDD!</a
+      >
+    </p>
+
+    <button>Be a GDD advocate!</button>
+
+    <p class="footing">
+      This page was built by
+      <a href="https://about.me/kensanico" target="_blank"> Ken Sanico</a>
+    </p>
+
+    <script>
+      alert("Help someone in just one click of a button! 🫶");
+      function BeAdvocate() {
+        let name = prompt("What is your name?");
+        let advocacy = prompt("Are you a mental health advocate?");
+
+        let heading = document.querySelector("h1");
+        if (advocacy === "yes" || advocacy === "Yes" || advocacy === "YES") {
+          heading.innerHTML = "Be a GDD advocate," + " " + name + "!";
+        } else {
+          heading.innerHTML =
+            "Take the first step and support GDD," + " " + name + "!";
+        }
+      }
+
+      let contactButton = document.querySelector("button");
+
+      contactButton.addEventListener("click", BeAdvocate);
+    </script>
+  </body>
+</html>

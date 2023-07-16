@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 2-Lesson 10</title>
+  </head>
+  <style>
+    h1 {
+      text-align: center;
+      color: blue;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    button {
+      display: block;
+      margin: 0 auto;
+    }
+  </style>
+  <h1>JavaScript</h1>
+  <ul>
+    <li>SheCodes</li>
+  </ul>
+  <h2>hello</h2>
+  <button>Apply now</button>
+  <body>
+    <script>
+      function updateHeading(newHeading) {
+        let heading = document.querySelector("h1");
+        heading.innerHTML = newHeading;
+      }
+
+      function canApply() {
+        let age = prompt("How old are you?");
+        return age >= 18;
+      }
+
+      function apply() {
+        let name = prompt("Kindly indicate your first name.");
+
+        if (canApply()) {
+          updateHeading("Hi ${name}! Welcome to SheCodes");
+        } else {
+          updateHeading("Sorry ${name}! You cannot join SheCodes!");
+        }
+      }
+
+      let contactButton = document.querySelector("button");
+
+      contactButton.addEventListener("click", apply, canApply, updateHeading);
+    </script>
+  </body>
+</html>
